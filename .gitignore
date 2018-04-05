@@ -1,3 +1,9 @@
+# ignore les fichiers sons et images
+app/uploads/images/*
+!app/uploads/images/.gitkeep 
+app/uploads/son/*
+!app/uploads/son/.gitkeep 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

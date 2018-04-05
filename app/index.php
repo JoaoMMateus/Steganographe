@@ -21,16 +21,16 @@
             <div class="col-md-6">
                 <div class="title col-md-12"><h3>Ajouter un message ou une image dans un fichier son</h3></div>
                 <div class="formulaire col-md-12">
-                    <form action="" method="post">
+                    <form action="/upload.php" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="">Choisir un fichier son</label>
-                            <input type="file" class="form-control-file" name="" id="" placeholder="">
-                            <label for="">Choisir une image</label>
-                            <input type="file" class="form-control-file" name="" id="" placeholder="">
-                            <label for="">Message</label>
-                            <textarea class="form-control" name="" id="" rows="2"></textarea>
+                            <label for="SoundFile">Choisir un fichier son</label>
+                            <input type="file" class="form-control-file" name="SoundFile" id="">
+                            <label for="PictureFile">Choisir une image</label>
+                            <input type="file" class="form-control-file" name="PictureFile" id="">
+                            <label for="SecretMessage">Message</label>
+                            <textarea class="form-control" name="SecretMessage" id="" rows="2"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <input type="submit" class="btn btn-primary" value="Envoyer">
                     </form>
                 </div>
             </div>
@@ -42,12 +42,12 @@
             <div class="col-md-6">
             <div class="title col-md-12"><h3>Recuperer un message ou une image présente dans un fichier son</h3></div>
                 <div class="formulaire col-md-12">
-                    <form action="" method="post">
+                    <form action="/upload.php" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                        <label for="">Choisir un fichier son</label>
-                        <input type="file" class="form-control-file" name="" id="" placeholder="">
+                            <label for="PictureFile">Choisir un fichier son</label>
+                            <input type="file" class="form-control-file" name="PictureFile" id="">
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <input type="submit" class="btn btn-primary" value="Envoyer">
                     </form>
                 </div>
             </div>
