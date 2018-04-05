@@ -59,4 +59,12 @@
         // chmod("uploads/image/" . $name, 0644);
     }
 
+    //methode permetant l'execution d'un script python avec des arguments/parametres
+
+    $start_word = "start";
+    $end_word = "end";
+
+    $command = 'py.exe test.py ' . $start_word . ' ' . $end_word;
+    $output = passthru($command);
+    
 ?>
