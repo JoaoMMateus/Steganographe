@@ -22,13 +22,12 @@
                 <div class="title col-md-12"><h3>Ajouter un message ou une image dans un fichier son</h3></div>
                 <div class="formulaire col-md-12">
                     <form action="/upload.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="Hide" value="1">
                         <div class="form-group">
                             <label for="SoundFile">Choisir un fichier son</label>
                             <input type="file" class="form-control-file" name="SoundFile" id="">
                             <label for="PictureFile">Choisir une image</label>
                             <input type="file" class="form-control-file" name="PictureFile" id="">
-                            <label for="SecretMessage">Message</label>
-                            <textarea class="form-control" name="SecretMessage" id="" rows="2"></textarea>
                         </div>
                         <input type="submit" class="btn btn-primary" value="Envoyer">
                     </form>
@@ -43,9 +42,12 @@
             <div class="title col-md-12"><h3>Recuperer un message ou une image présente dans un fichier son</h3></div>
                 <div class="formulaire col-md-12">
                     <form action="/upload.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="Hide" value="0">
                         <div class="form-group">
-                            <label for="PictureFile">Choisir un fichier son</label>
-                            <input type="file" class="form-control-file" name="PictureFile" id="">
+                            <label for="SoundFile">Choisir un fichier son</label>
+                            <input type="file" class="form-control-file" name="SoundFile">
+                            <label for="fileSize">Taille de l'image en octet</label>
+                            <input type="text" class="form-control" name="fileSize">
                         </div>
                         <input type="submit" class="btn btn-primary" value="Envoyer">
                     </form>
