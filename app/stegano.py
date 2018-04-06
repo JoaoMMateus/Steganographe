@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.6
+import sys
 import wave
 import strut
 import pprint 
@@ -8,13 +10,13 @@ ifile = wave.open("fichier.wav")
 ofile = wave.open("outfichier.wav" ,"w")
 ofile.setparams(ifile.getparams())
 
-sampwidth = ifile.getswpwisth()
+sampwidth = ifile.getsampwidth()
 fmts = (home, "=B", "=h" , None, "=l")
 fnt = fmts[sampwidth]
 dcs = (None , 128, 0 None, 0)
 dc = dcs [sampwidth]
 
-for i in range (ifiel.getnframes()):
+for i in range (ifile.getnframes()):
     iframe = ifile.readframes(1)
     pprint.pprint(iframe)
     b = frame[3]
