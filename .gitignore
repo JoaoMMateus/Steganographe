@@ -1,8 +1,8 @@
 # ignore les fichiers sons et images
 app/uploads/images/*
 !app/uploads/images/.gitkeep 
-app/uploads/messages/*
-!app/uploads/messages/.gitkeep 
+app/uploads/outputs/*
+!app/uploads/outputs/.gitkeep 
 app/uploads/son/*
 !app/uploads/son/.gitkeep 
 
